@@ -6,7 +6,7 @@ body {
     margin: 0;
     background-image: url(https://d39l2hkdp2esp1.cloudfront.net/img/photo/140991/140991_00_2x.jpg);
     background-size: cover;
-    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 nav {
@@ -43,6 +43,7 @@ main {
 }
 
 .main-text {
+    min-height: 80vh;
     margin-left: 10vw;
     padding: 7.5em 0 5em;
     width: 75%;
@@ -86,4 +87,27 @@ main {
     top: 0;
     right: -2.5em;
     font-weight: 700;
+}
+
+footer {
+    background-color: brown;
+    padding: 4em;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.25em 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
