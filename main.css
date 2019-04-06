@@ -28,6 +28,11 @@ nav li a {
     text-transform: uppercase;
 }
 
+nav li a:hover,
+nav li a.active {
+    border-bottom: 1px solid rgb(114, 38, 38);
+}
+
 .nav-logo {
     font-size: 1.5em;
     width: 2em;
@@ -57,12 +62,19 @@ main {
 }
 
 .main-text button {
-    background: #fff;
+    background-color: #fff;
     padding: 1em;
     text-transform: uppercase;
     color: brown;
     border: none;
     position: relative;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.main-text button:hover {
+    background-color: #f4c72b;
+    color: white;
 }
 
 .main-text button::after {
