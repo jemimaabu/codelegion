@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-image: url(https://images.pexels.com/photos/960137/pexels-photo-960137.jpeg);
+    background-image: url(https://d39l2hkdp2esp1.cloudfront.net/img/photo/140991/140991_00_2x.jpg);
     background-size: cover;
     min-height: 100vh;
 }
@@ -13,7 +13,7 @@ nav {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    color: white;
+    color: rgb(114, 38, 38);
     margin-top: 1em;
 }
 
@@ -22,7 +22,7 @@ nav li {
 }
 
 nav li a {
-    color: white;
+    color: rgb(114, 38, 38);
     text-decoration: none;
     font-size: .8em;
     text-transform: uppercase;
@@ -31,4 +31,47 @@ nav li a {
 .nav-logo {
     font-size: 1.5em;
     width: 2em;
+}
+
+main {
+    position: relative;
+}
+
+.main-text {
+    margin-left: 10vw;
+    padding: 7.5em 0 5em;
+    width: 75%;
+}
+
+.main-text h1 {
+    color: brown;
+    font-size: 5em;
+    margin: 0;
+}
+
+.main-text h2 {
+    color: #f4c72b;
+    font-size: 1.5em;
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+.main-text button {
+    background: #fff;
+    padding: 1em;
+    text-transform: uppercase;
+    color: brown;
+    border: none;
+    position: relative;
+}
+
+.main-text button::after {
+    content: ">";
+    background-color: #f4c72b;
+    color: white;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    right: -2.5em;
+    font-weight: 700;
 }
